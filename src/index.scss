@@ -1,0 +1,35 @@
+@use "colors";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+$background: colors.$floral-white;
+$text: colors.$davys-grey;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 40px 120px;
+  font-family: "Inter", sans-serif;
+  color: $text;
+  background-color: $background;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  body {
+    padding: 40px 20px;
+  }
+}
