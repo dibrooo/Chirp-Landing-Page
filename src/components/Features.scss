@@ -1,0 +1,64 @@
+@use "../colors";
+
+$title: colors.$black;
+$background: colors.$white;
+$border: colors.$light-gray;
+
+.features-section {
+  background-color: $background;
+
+  h2 {
+    width: 40%;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 35px;
+    column-gap: 35px;
+    margin-top: 25px;
+  }
+}
+
+.features-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px;
+  border: 1px solid $border;
+  border-radius: 5px;
+
+  h3 {
+    color: $title;
+  }
+
+  img {
+    width: 35px;
+    height: 35px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .features-section {
+    h2 {
+      width: 55%;
+    }
+
+    .features-grid {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .features-section {
+    h2 {
+      width: 100%;
+    }
+  }
+}

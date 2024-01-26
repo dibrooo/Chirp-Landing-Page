@@ -3,6 +3,7 @@
 
 $background: colors.$floral-white;
 $text: colors.$davys-grey;
+$title: colors.$black;
 
 * {
   margin: 0;
@@ -11,10 +12,18 @@ $text: colors.$davys-grey;
 }
 
 body {
-  padding: 40px 120px;
   font-family: "Inter", sans-serif;
   color: $text;
   background-color: $background;
+}
+
+header,
+section {
+  padding: 45px 120px;
+}
+
+header {
+  padding-bottom: 0;
 }
 
 a {
@@ -22,14 +31,25 @@ a {
   color: $text;
 }
 
+h2 {
+  font-size: 34px;
+  color: $title;
+}
+
 @media only screen and (max-width: 768px) {
-  body {
+  header,
+  section {
     padding: 40px;
   }
 }
 
 @media only screen and (max-width: 390px) {
-  body {
+  header,
+  section {
     padding: 40px 20px;
+  }
+
+  h2 {
+    font-size: 32px;
   }
 }
