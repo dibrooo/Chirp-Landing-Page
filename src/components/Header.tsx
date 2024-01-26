@@ -1,6 +1,6 @@
 import "./Header.scss";
-import twitterLogo from "../assets/Twitter.svg";
 import hamburgerMenu from "../assets/Hamburger Menu.svg";
+import SignInButton from "./SignInButton";
 
 const Header = () => {
   return (
@@ -26,10 +26,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <button type="button" className="sign-in-button">
-          <img src={twitterLogo} alt="Twitter Logo" />
-          <span>Sign in with Twitter</span>
-        </button>
+        <SignInButton />
       </div>
     </header>
   );
