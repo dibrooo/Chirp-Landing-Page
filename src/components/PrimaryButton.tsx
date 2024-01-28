@@ -1,8 +1,8 @@
-import { CSSProperties } from "react";
+import { CSSProperties, FC } from "react";
 import twitterLogo from "../assets/Twitter.svg";
 
 const styles: { [key: string]: CSSProperties } = {
-  signInButton: {
+  buttonStyles: {
     display: "flex",
     alignItems: "center",
     gap: "5px",
@@ -18,13 +18,17 @@ const styles: { [key: string]: CSSProperties } = {
   },
 };
 
-const SignInButton = () => {
+interface PrimaryButtonProps {
+  text: string;
+}
+
+const PrimaryButton: FC<PrimaryButtonProps> = ({ text }) => {
   return (
-    <button type="button" style={styles.signInButton}>
+    <button type="button" style={styles.buttonStyles}>
       <img src={twitterLogo} alt="Twitter Logo" />
-      <span>Sign in with Twitter</span>
+      <span>{text}</span>
     </button>
   );
 };
 
-export default SignInButton;
+export default PrimaryButton;

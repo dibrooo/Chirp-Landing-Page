@@ -1,5 +1,5 @@
 import "./Hero.scss";
-import SignInButton from "./SignInButton";
+import PrimaryButton from "./PrimaryButton";
 import heroImageDesktop from "../assets/Hero Image (Desktop View).png";
 import heroImageTablet from "../assets/Hero Image (Tablet View).png";
 
@@ -26,7 +26,7 @@ const Hero = () => {
         </p>
 
         <div className="buttons-wrapper">
-          <SignInButton />
+          <PrimaryButton text="Sign in with Twitter" />
           <a href="#">Learn more -{">"}</a>
         </div>
 

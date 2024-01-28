@@ -1,0 +1,62 @@
+@use "../colors";
+
+$card-background: colors.$floral-white;
+$card-border: colors.$pastel-orange;
+$divider: colors.$american-silver;
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+
+  p {
+    margin-top: 10px;
+    max-width: 550px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 50px;
+  max-width: 550px;
+  padding: 20px 30px;
+  border: 1px solid $card-border;
+  border-radius: 10px;
+  background-color: $card-background;
+
+  h3 {
+    font-size: 22px;
+    font-weight: 500;
+
+    b {
+      font-size: 48px;
+      font-weight: 700;
+      color: black;
+    }
+  }
+
+  button {
+    justify-content: center;
+    gap: 15px !important;
+  }
+}
+
+.price-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: $divider;
+}

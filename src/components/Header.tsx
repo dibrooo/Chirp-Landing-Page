@@ -1,6 +1,6 @@
 import "./Header.scss";
 import hamburgerMenu from "../assets/Hamburger Menu.svg";
-import SignInButton from "./SignInButton";
+import PrimaryButton from "./PrimaryButton";
 
 const Header = () => {
   return (
@@ -26,7 +26,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <SignInButton />
+        <PrimaryButton text="Sign in with Twitter" />
       </div>
     </header>
   );
