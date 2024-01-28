@@ -2,6 +2,7 @@ import "./App.scss";
 import Features from "./components/Features";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Tweets from "./components/Tweets";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <main>
         <Hero />
         <Features />
+        <Tweets />
       </main>
     </>
   );

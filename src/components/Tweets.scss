@@ -1,0 +1,83 @@
+@use "../colors";
+
+$background: colors.$water;
+
+.tweets-section {
+  background-color: $background;
+
+  .tweets-wrapper {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    margin-top: 25px;
+    overflow-x: auto;
+  }
+}
+
+.tweet-item {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 20px;
+  padding: 25px;
+  width: 375px;
+  height: fit-content;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.tweet-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .user-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+
+    b {
+      color: black;
+    }
+
+    span {
+      font-size: 14px;
+    }
+  }
+}
+
+.tweet-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .tweet-likes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+@media only screen and (min-width: 391px) {
+  .tweets-section {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .tweets-section {
+    .tweets-wrapper {
+      flex-direction: column;
+    }
+  }
+
+  .tweet-item {
+    width: 100%;
+  }
+}
