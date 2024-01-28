@@ -1,9 +1,10 @@
 @use "colors";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 $background: colors.$floral-white;
 $text: colors.$davys-grey;
 $title: colors.$black;
+$logo: colors.$blue-de-france;
 
 * {
   margin: 0;
@@ -22,6 +23,10 @@ section {
   padding: 45px 120px;
 }
 
+footer {
+  padding: 30px 120px;
+}
+
 header {
   padding-bottom: 0;
 }
@@ -36,10 +41,21 @@ h2 {
   color: $title;
 }
 
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  color: $logo;
+}
+
 @media only screen and (max-width: 768px) {
   header,
   section {
     padding: 40px;
+  }
+
+  footer {
+    padding: 30px 40px;
   }
 }
 
@@ -47,6 +63,10 @@ h2 {
   header,
   section {
     padding: 40px 20px;
+  }
+
+  footer {
+    padding: 30px 20px;
   }
 
   h2 {

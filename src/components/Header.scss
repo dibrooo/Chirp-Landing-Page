@@ -1,18 +1,7 @@
-@use "../colors";
-
-$logo: colors.$blue-de-france;
-
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  .logo {
-    font-size: 20px;
-    font-weight: 700;
-    font-style: italic;
-    color: $logo;
-  }
 }
 
 .navigation-wrapper {
